@@ -1,8 +1,6 @@
-FROM rust:1.31 AS build
+FROM node:17.7.2-alpine3.14
 WORKDIR /app
-RUN cargo build --release
-
-FROM alpine:3.14
-#Copy the build's output binary from the previous build container
-COPY --from=build /app/target/release/aws-codepipeline-example /app
-ENTRYPOINT ["/app/aws-codepipeline-example"]
+COPY . /app
+RUN npm install
+EXPOSE 8080
+CMD nodejs index.js

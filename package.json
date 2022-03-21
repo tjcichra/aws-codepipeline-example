@@ -1,0 +1,22 @@
+{
+  "name": "aws-codepipeline-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjcichra/aws-codepipeline-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjcichra/aws-codepipeline-example/issues"
+  },
+  "homepage": "https://github.com/tjcichra/aws-codepipeline-example#readme",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
